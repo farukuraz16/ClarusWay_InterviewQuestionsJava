@@ -3,16 +3,35 @@ package day1;
 import java.util.Scanner;
 
 public class Q07_IsDigit {
-      /*
-     Create a method that accepts a String as parameter and finds the sum of digits in that String.
-     Example:
-     input : J4\/4 1$ 34$¥
-     output : 16
+    /*
+   Create a method that accepts a String as parameter and finds the sum of digits in that String.
+   Example:
+   input : J4\/4 1$ 34$¥
+   output : 16
 
-     Hint:
-     Character.isDigit()
-     Integer.valueOf()
-    */
+   Hint:
+   Character.isDigit()
+   Integer.valueOf()
+  */
+    public static void main(String[] args) {
+        Scanner dat = new Scanner(System.in);
+        System.out.println("write something: ");
+        String str = dat.nextLine();
+
+        System.out.println(sumMethod(str));
+    }
+
+    private static int sumMethod(String str) {
+        int sum = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i))) {
+                sum += Integer.parseInt(String.valueOf(str.charAt(i)));}
+        }
+        return sum;
+    }
 
 
 }
+
+
+

@@ -27,7 +27,7 @@ public class Q05_DifferenceBetweenArray_LargestAndSmallestElements {
             }
         Arrays.sort(arr);
         System.out.println("Array elemanları = " + Arrays.toString(arr));
-        System.out.println("En büyük ve en küçük elemanın farkı = " + ((arr.length-1)-arr[0]));
+        System.out.println("En büyük ve en küçük elemanın farkı = " + (arr[uzunluk-1]-arr[0]));
 
 
 
